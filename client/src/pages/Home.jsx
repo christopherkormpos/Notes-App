@@ -37,7 +37,7 @@ export default function Home(props) {
                             <div className="card-component-body">
                             <p>{card.notes_body}</p>
                             </div>
-                            <p>Last Modified : {card.formatedDate}</p>
+                            <p className="last-modified">Last Modified : {card.formatedDate}</p>
                             <div className="buttons">
                                 <Link to={`/update/${card.id}`}>
                                     <button className="btn-edit" title="Edit Note">

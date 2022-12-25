@@ -335,6 +335,18 @@ form{
   width: 310px;
   height: 150px;
   overflow-y: hidden;
+  margin-bottom: 30px;
+}
+h4{
+  font-size:larger;
+  height: 23px;
+  overflow-y: hidden;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.last-modified{
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 .delete-icon{
   width: 20px;
@@ -422,4 +434,61 @@ form{
 .addNote:hover{
   transform: translateY(-0.25em);
   cursor: pointer;
+}
+@media (max-width: 650px) {
+  .notes_body{
+    width: 75vw;
+    height: 330px;
+  }
+  .notes_bodydark{
+    width: 75vw;
+    height: 330px;
+  }
+  .notes_title{
+    width: 75vw;
+  }
+  .notes_titledark{
+    width: 75vw;
+  }
+  .submit{
+    margin-bottom: 50px;
+    align-self: center;
+    margin-left: 3vw;
+  }
+  .to-all-notes-button{
+    margin-right: auto;
+    margin-left: 0vw;
+  }
+}
+@media (max-width: 774px) {
+  .card-component-dark{
+    width: 210px;
+    height: 220px;
+  }
+  .card-component-{
+    width: 210px;
+    height: 220px;
+  }
+  .card-component-body{
+    width: 210px;
+    height: 55px;
+  }
+  h4{
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+  .last-modified{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: small;
+  }
+}
+@media (max-width: 330px) {
+  h1{
+    font-size: large;
+  }
+  .nav--logo_icon{
+    margin-right: 5 px;
+    margin-left: 5px;
+  }
 }
