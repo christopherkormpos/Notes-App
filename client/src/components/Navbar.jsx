@@ -4,7 +4,7 @@ import React from 'react'
 export default function Navbar(props) {
     return (
         <nav
-            className={props.darkMode ? "dark" : ""}
+            className={props.darkMode ? "dark" : ""}    //Prop passed but not used since Nav is not affected by DM/LM
         >
             <span>
             <Link to="/">

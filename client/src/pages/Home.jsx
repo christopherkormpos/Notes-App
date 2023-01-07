@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import axios from 'axios'
+import axios from 'axios'       //AXIOS package usage for promise handling
 
 export default function Home(props) {
-    const [data, setData] = React.useState([])
+    const [data, setData] = React.useState([])      //State for incoming API data
 
 
     React.useEffect(() => {
-        axios.get('http://localhost:5000/api/get').then((response) => {
+        axios.get('http://localhost:5000/api/get').then((response) => {     //useEffect hook for setting our API data
             setData(response.data)
         })
     })
 
     const deleteNote = (id) => {
         if (window.confirm("Are you sure that you want to delete that note?")) {
-            console.log(`${id}`)
-            axios.delete(`http://localhost:5000/api/remove/${id}`)
-            toast.success("Note deleted successfully")
+            axios.delete(`http://localhost:5000/api/remove/${id}`)          
+            toast.success("Note deleted successfully")                              //Delete Note function
             setTimeout(() => {
                 axios.get('http://localhost:5000/api/get').then((response) => {
                     setData(response.data)
@@ -27,7 +26,7 @@ export default function Home(props) {
     }
 
     return (
-        data.length > 0 ?
+        data.length > 0 ?               //Ternary operator
         <div className="wrapper">
         <main className={`main-${props.darkMode ? "dark" : ""}`}>
                 {data.map((card) => {
