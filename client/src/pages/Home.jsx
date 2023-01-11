@@ -33,6 +33,7 @@ export default function Home(props) {
                     return (
                         <div key={card.id} className={`card-component-${props.darkMode ? "dark" : ""}`}>
                             <h4>{card.notes_title}</h4>
+                            <h6>Category: {card.category_name}</h6>
                             <div className="card-component-body">
                             <p>{card.notes_body}</p>
                             </div>

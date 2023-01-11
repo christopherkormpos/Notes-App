@@ -335,14 +335,14 @@ form{
   width: 310px;
   height: 150px;
   overflow-y: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 h4{
   font-size:larger;
   height: 23px;
   overflow-y: hidden;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .last-modified{
   margin-bottom: 15px;
@@ -475,7 +475,7 @@ h4{
   }
   h4{
     margin-top: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   .last-modified{
     margin-bottom: 5px;
@@ -491,4 +491,21 @@ h4{
     margin-right: 5 px;
     margin-left: 5px;
   }
+}
+.select{
+  background-color: #ECEBF3;
+  color: #141414;
+  border: 1px solid #141414;
+  transition: 0.5s ease;
+}
+.dark-select{
+  background-color: #1A1B41;
+  color: #ECEBF3;
+  border: 1px solid #ECEBF3;
+  transition: 0.5s ease;
+}
+h6{
+  margin: 0px;
+  font-style: italic;
+  font-weight: 300;
 }
