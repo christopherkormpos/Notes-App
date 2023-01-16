@@ -22,7 +22,7 @@ export default function AddNote(props) {
   const { id } = useParams()  //UseParams Hook - for incoming id
 
   React.useEffect(() => {
-    axios.get('http://localhost:5000/api/getcategory').then((response) => {     //useEffect hook for setting our API data
+    axios.get('http://localhost:5000/api/getcategory').then((response) => {     //useEffect hook for setting our Category data
         setCategoryData(response.data)
     })
 })
@@ -64,7 +64,7 @@ export default function AddNote(props) {
 
     }
 
-    navigate({ pathname: '/' })   //When one of those 3 is done got to "/"
+    navigate({ pathname: '/' })   //When one of those 3 is done go to "/"
   }
 
 
@@ -75,7 +75,7 @@ export default function AddNote(props) {
 
   const handleOption = (e) => {
     const {value} = e.target
-    setState({ ...state, category_id: value })
+    setState({ ...state, category_id: value })  //Function for category option handling
   };
 
 
